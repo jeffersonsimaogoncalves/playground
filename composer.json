@@ -11,6 +11,7 @@
         "php": "^8.2",
         "ashallendesign/favicon-fetcher": "^3.5",
         "filament/filament": "^3.2",
+        "jeffersonsimaogoncalves/filament-check-whois-widget": "dev-main",
         "joaopaulolndev/filament-check-ssl-widget": "^1.0",
         "joaopaulolndev/filament-edit-env": "^1.0",
         "joaopaulolndev/filament-edit-profile": "^1.0",

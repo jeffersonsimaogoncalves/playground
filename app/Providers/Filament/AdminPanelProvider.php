@@ -18,6 +18,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use JeffersonSimaoGoncalves\FilamentCheckWhoisWidget\FilamentCheckWhoisWidgetPlugin;
 use Joaopaulolndev\FilamentCheckSslWidget\FilamentCheckSslWidgetPlugin;
 use Joaopaulolndev\FilamentEditEnv\FilamentEditEnvPlugin;
 use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
@@ -70,6 +71,14 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 FilamentCheckSslWidgetPlugin::make()
                     ->domains([
+                        'nproducoes.com.br',
+                        'laravel.com',
+                        'filamentphp.com',
+                        'github.com'
+                    ]),
+                FilamentCheckWhoisWidgetPlugin::make()
+                    ->domains([
+                        'nproducoes.com.br',
                         'laravel.com',
                         'filamentphp.com',
                         'github.com'
